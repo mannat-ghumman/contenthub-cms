@@ -1,25 +1,13 @@
 import api from "./api";
 
-export const getDashboardStats = async () => {
 
-    const [blogs, videos, categories] = await Promise.all([
+export const getDashboardStats = async()=>{
 
-        api.get("/blogs"),
 
-        api.get("/videos"),
+    const res = await api.get("/dashboard/stats");
 
-        api.get("/categories")
 
-    ]);
+    return res.data.data;
 
-    return {
-
-        blogs: blogs.data.data.length,
-
-        videos: videos.data.data.length,
-
-        categories: categories.data.data.length
-
-    };
 
 };

@@ -107,16 +107,11 @@ export default function DashboardLayout({ children }) {
                 <div className="p-6 space-y-4">
 
                     <Link
-
-                        to="/"
-
-                        className="block w-full text-center bg-green-600 hover:bg-green-700 py-3 rounded-lg font-semibold"
-
-                    >
-
-                        🌐 View Website
-
-                    </Link>
+    to="/"
+    className="block w-full text-center bg-green-600 hover:bg-green-700 py-3 rounded-lg font-semibold"
+>
+    🏠 Home
+</Link>
 
                     <button
 
@@ -157,16 +152,11 @@ export default function DashboardLayout({ children }) {
                     </div>
 
                     <Link
-
-                        to="/"
-
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold"
-
-                    >
-
-                        View Website
-
-                    </Link>
+    to="/"
+    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold"
+>
+    🏠 Home
+</Link>
 
                 </header>
 

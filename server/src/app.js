@@ -8,6 +8,10 @@ const blogRoutes=require("./routes/blogRoutes");
 const categoryRoutes =
 require("./routes/categoryRoutes");
 const videoRoutes=require("./routes/videoRoutes");
+const dashboardRoutes=require("./routes/dashboardRoutes");
+
+
+
 
 app.use(cors());
 
@@ -18,6 +22,10 @@ app.use("/api/blogs",blogRoutes);
 app.use(
     "/api/categories",
     categoryRoutes
+);
+app.use(
+    "/api/dashboard",
+    dashboardRoutes
 );
 app.use("/api/videos",videoRoutes);
 
